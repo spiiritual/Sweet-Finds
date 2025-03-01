@@ -84,9 +84,8 @@ body{
     width: 100%;
 }
 
-.product-container h1 {
+.product-container {
     font-size: 1.8rem;
-    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -124,8 +123,9 @@ body{
     color: #FFE194;
 }
 
-.product-title{
+.product-title h2 {
     font-size: 1.1rem;
+    text-align: center;
     margin: 1.2rem 0 1rem; 
 }
 
@@ -173,9 +173,7 @@ body{
     }
 }
 
-
-
-
+/* animation */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -189,7 +187,7 @@ body{
 
 .how-to-use-text {
     opacity: 0; 
-    animation: slideIn 1.5s ease-out forwards; /* Slide and fade effect */
+    animation: slideIn 1.5s ease-out forwards; 
     margin-top: 20px;
     padding: 10px;
     font-size: 18px;
@@ -217,4 +215,9 @@ body{
 
 .wrapper {
     margin-bottom: 20px;
+}
+
+/* loading screen */
+.loader {
+    position: fixed;
 }
