@@ -31,3 +31,15 @@ var swiper = new Swiper(".product-slider", {
     },
   });
 
+// redirects user to the products page with the recommendations and products with the best reviews
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    let inputField = document.querySelector(".input-box input");
+    let link = inputField.value.trim();
+
+    if (link) {
+        let encodedLink = encodeURIComponent(link);
+            window.location.href = "https://nicolewang1206.github.io/Sweet-Finds/page%202.html";
+    }
+});
