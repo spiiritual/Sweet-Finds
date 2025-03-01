@@ -89,3 +89,18 @@ body{
     text-align: center;
     margin-bottom: 2rem;
 }
+
+.product-box{
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0.4rem;
+    margin-bottom: 4rem;
+}
+.product-img{
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
