@@ -9,7 +9,7 @@ var swiper = new Swiper(".product-slider", {
     },
     autoplay:{
         delay:5000,
-        clickable: true,
+        disableOnInteraction: true,
     },
     breakpoints: {
       300: {

@@ -84,7 +84,7 @@ body{
     width: 100%;
 }
 
-.bike-container h1 {
+.product-container h1 {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -97,6 +97,11 @@ body{
     border: 1px solid #ffffff;
     border-radius: 0.4rem;
     margin-bottom: 4rem;
+}
+
+.product-box:hover{
+    box-shadow: 0 4px 16px hsla(355deg 25% 15% / 10%);
+    transition: 0.3s all ease-in-out;
 }
 
 .product-img{
@@ -155,5 +160,10 @@ body{
     .product-box{
         margin: 0 auto;
         width: 90%;
+    }
+}
+@media (max-width:400px){
+    .product-box h1{
+        font-size: 1.2rem; 
     }
 }
