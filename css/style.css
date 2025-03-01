@@ -42,6 +42,10 @@ body{
     text-align: center;
 }
 
+.product-feedback h2{
+    text-align: center;
+}
+
 .wrapper .input-box {
     width: 100%;
     height: 50px;
