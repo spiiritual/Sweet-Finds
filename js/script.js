@@ -22,12 +22,3 @@ var swiper = new Swiper(".product-slider", {
     },
   });
 
-// takes user to page 2.html
-document.getElementById("linkForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    let userInput = document.getElementById("userInput").value;
-
-    if (userInput.trim() !== "") {
-        window.location.href = "page2.html";
-    }
-});
