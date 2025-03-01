@@ -31,16 +31,28 @@
             <h1>How to Use</h1>
             Follow these simple steps to find your sweet finds:
             <ul>
-                <li>1. Paste a link to a product you are searching for</li>
-                <li>2. Provide what you like and dislike about the product</li>
-                <li>3. Sweet Finds will give you the product with the best reviews and highest ratings</li>
-                <li>4. Sweet Finds will also give you recommendations based on the product you are searching for</li>
-                <li>5. Enjoy discovering our recommendations!</li>
+                <p>1. Paste a link to a product you are searching for</p>
+                <p>2. Provide what you like and dislike about the product</p>
+                <p>3. Sweet Finds will give you the product with the best reviews and highest ratings</p>
+                <p>4. Sweet Finds will also give you recommendations based on the product you are searching for</li>
+                <p>5. Enjoy discovering our recommendations!</li>
             </ul>
         </div>
     </div>
 
     <script>
+        // redirects user to loading screen and then products page
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader")
+            
+            loader.classList.add("loader-hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild("loader");
+            })
+        })
+
+        // redirects user to the products page with the recommendations and products with the best reviews
         document.querySelector("form").addEventListener("submit", function(event) {
             event.preventDefault(); 
         
@@ -53,15 +65,7 @@
             }
         });
 
-        window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader")
-            
-            loader.classList.add("loader-hidden");
-
-            loader.addEventListener("transitionend", () => {
-                document.body.removeChild("loader");
-            })
-        })
+        
     </script>
     
 </body>

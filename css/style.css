@@ -127,9 +127,8 @@ body{
     color: #FFE194;
 }
 
-.product-title h2 {
+.product-title {
     font-size: 1.1rem;
-    text-align: center;
     margin: 1.2rem 0 1rem; 
 }
 
@@ -226,8 +225,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
