@@ -52,6 +52,16 @@
                     window.location.href = "https://nicolewang1206.github.io/Sweet-Finds/page%202.html";
             }
         });
+
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader")
+            
+            loader.classList.add("loader-hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild("loader");
+            })
+        })
     </script>
     
 </body>
