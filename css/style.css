@@ -146,6 +146,14 @@ body{
 }
 
 .buy-btn:hover{
-    background: #b3ec98;
+    background: #e3ffd6;
     transition: 0.3s all linear;
+}
+
+/* responsive */
+@media (max-width:1064px){
+    .product-box{
+        margin: 0 auto;
+        width: 90%;
+    }
 }

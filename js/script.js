@@ -4,19 +4,28 @@ var swiper = new Swiper(".product-slider", {
     spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
+      dynamicBullets: true,
       clickable: true,
     },
+    autoplay:{
+        delay:5000,
+        clickable: true,
+    },
     breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 10,
       },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
+      530: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      758: {
+        slidesPerView: 3,
+        spaceBetween: 15,
       },
       900: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 20,
       },
     },
