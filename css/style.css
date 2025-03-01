@@ -12,9 +12,15 @@
 
 /* variables */
 :root {
-    --main-color: ;
-    --second-color: ;
-    --text-color: ;
-    --second-text-color: ;
-    --bg-color: ;
+    --main-color: #E93B81 ;
+    --second-color: #F5ABC9 ;
+    --text-color: #4C4C6D ;
+    --second-text-color: #0000 ;
+    --bg-color: #FFE5E2 ;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
 }
