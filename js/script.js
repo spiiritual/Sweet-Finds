@@ -15,9 +15,9 @@ var swiper = new Swiper(".product-slider", {
         slidesPerView: 4,
         spaceBetween: 40,
       },
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
     },
   });
