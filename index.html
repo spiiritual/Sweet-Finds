@@ -10,7 +10,7 @@
     </head>
 <body>
     <div class="wrapper">
-        <form action="">
+        <form action="" id="product-url-form">
             <h1>Sweet Finds</h1>
             <div class="input-box">
                 <input type ="text" placeholder="Paste your Amazon link here" required >
@@ -18,10 +18,10 @@
             </div>
         </form>
     <div class="product-feedback">
-        <form action="">
+        <form action="" id="feedback-form">
             <h2>Feedback</h2>
             <div class="input-box">
-                <input type ="text" placeholder="Provide feedback here" required >
+                <input type ="text" placeholder="Provide feedback here" required>
             </div>
         </form>
     </div>
@@ -52,20 +52,21 @@
             })
         })
 
-        // redirects user to the products page with the recommendations and products with the best reviews
-        document.querySelector("form").addEventListener("submit", function(event) {
-            event.preventDefault(); 
-        
-            let inputField = document.querySelector(".input-box input");
-            let link = inputField.value.trim();
-        
-            if (link) {
-                let encodedLink = encodeURIComponent(link);
-                    window.location.href = "https://nicolewang1206.github.io/Sweet-Finds/page%202.html";
-            }
-        });
+        document.getElementById("product-url-form").addEventListener("submit", processSubmission);
+        document.getElementById("feedback-form").addEventListener("submit", processSubmission);
 
-        
+        function processSubmission(evt) {
+            evt.preventDefault();
+            
+            const link = document.querySelector("#product-url-form > div > input[type=text]").value;
+            const feedback = document.querySelector("#feedback-form > div > input[type=text]").value;
+
+            if (link && feedback) {
+                const encodedLink = encodeURIComponent(link);
+                const encodedFeedback = encodeURIComponent(feedback);
+                window.location.href = "http://127.0.0.1:5500/page%202.html" + "?product_url=" + encodedLink + "&feedback=" + encodedFeedback;
+            }
+        }
     </script>
     
 </body>
